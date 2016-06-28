@@ -15,11 +15,11 @@
   </head>
   <body>
     <div class="site-wrapper">
-      <div class="site-wrapper-inner">
-        <p>
-          Front and Back-End Developer
-          <h1><a href="#">Anthony Martinez</a></h1>
-        </p>
+      <div class="site-wrapper-inner" id="flex">
+        <div class="wrapper">
+          <h3>Front and Back-End Developer</h3>
+          <h1>Anthony Martinez</h1>
+        </div>
         <nav class="navbar navbar-default">
           <div class="container-fluid">
             <div class="navbar-header">
@@ -33,20 +33,37 @@
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav">
-                <li><a href="#">Personal Statement<span class="sr-only">(current)</span></a></li>
-              </ul>
-              <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Link</a></li>
+                <!-- <span class="sr-only">(current)</span> -->
+                <li><a href="#">Personal Statement</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Skills and Experience</li>
+                <li class="last"><a href="#">Connect</a></li>
               </ul>
             </div>
           </div>
         </nav>
 
+
+        <!-- <object>
+          <embed src="pictures/untitled.svg">
+        </object> -->
+
+
+
         <div class="left">
-        
+
+          <div id="left-brain-svg" hidden>
+            <svg width="400" height="400">
+              <rect x="20" y="20" width="250" height="250" style="fill:blue">
+                <animate attributeType="CSS" attributeName="opacity" from="1" to="0" dur="5s" repeatCount="indefinite" />
+              </rect>
+              Sorry, your browser does not support inline SVG.
+            </svg>
+          </div>
+
         </div>
         <div class="right">
-          test
         </div>
 
       </div>
