@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/css/animsition.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8">
+  <link rel='shortcut icon' href='img/Logo.ico' type='image/x-icon'/ >
+</head>
+<body>
+
+  <header class="clearfix">
+    <nav class="nav nav-bar">
+      <ul class="nav">
+        <li>
+            <a href="index.html" class="animsition-link" data-animsition-out-class="fade-out-right"
+        data-animsition-out-duration="1000">Home</a>
+        </li>
+          <li>
+              <a href="about.html" class="animsition-link" data-animsition-out-class="fade-out-left"
+          data-animsition-out-duration="1000">About</a>
+          </li>
+          <li>
+              <a href="portfolio.html" class="animsition-link" data-animsition-out-class="fade-out-left"
+          data-animsition-out-duration="1000">Portfolio</a>
+          </li>
+          <li>
+              <a href="contact.html" class="animsition-link" data-animsition-out-class="fade-out-left"
+          data-animsition-out-duration="1000">Contact</a>
+          </li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="site-wrapper">
+    <div class="animsition container">
+      <div class="col-xs-5 about">
+        <p>
+          I am junior LAMP+J stack developer transitioning from a career in marketing and business development. During my career I developed a strong passion for helping local, small businesses grow through technology. As a result, I have found my rightful place as a developer. I am an autodidactic learner and am always expanding my knowledge of programming languages in concert with knowledge of the industry as a whole. Currently, I am exploring functional programming both the front and back end.
+        </p>
+      </div>
+
+      <div class="col-xs-6 img">
+        <img id="headshot" class="img-responsive img-rounded" src="img/AnthonyMartinez2.jpg" alt="headshot" />
+      </div>
+    </div>
+
+   </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/js/animsition.min.js"></script>
+
+  <script type="text/javascript">
+  $(document).ready(function() {
+  $(".animsition").animsition({
+    inClass: 'fade-in-up-lg',
+    outClass: 'fade-out-up-lg',
+    inDuration: 1500,
+    outDuration: 800,
+    linkElement: '.animsition-link',
+    // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+    loading: true,
+    loadingParentElement: 'body', //animsition wrapper element
+    loadingClass: 'animsition-loading',
+    loadingInner: '', // e.g '<img src="loading.svg" />'
+    timeout: false,
+    timeoutCountdown: 5000,
+    onLoadEvent: true,
+    browser: [ 'animation-duration', '-webkit-animation-duration'],
+    // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+    // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+    overlay : false,
+    overlayClass : 'animsition-overlay-slide',
+    overlayParentElement : 'body',
+    transition: function(url){ window.location.href = url; }
+  });
+});
+  </script>
+
+</body>
+</html>
